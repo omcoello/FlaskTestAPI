@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask App</title>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <ul>
+      {% for product in products %}
+        <li>{{ product.code }} - {{ product.status }}</li>
+        <p>{{ product.description }}    Expire: {{product.expireDate}} </p>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
